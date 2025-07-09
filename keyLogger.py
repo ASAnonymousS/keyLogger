@@ -151,7 +151,7 @@ def on_release(key):
     except AttributeError:
         stack.discard(format(key))
 
-    if(format(key) == 'Key.space' || format(key) == 'Key.enter'):
+    if(format(key) == 'Key.space' or format(key) == 'Key.enter'):
         # Check if words list is not empty before popping
         if words: # Safer check than not len(words) == 0
             word = words.pop()
